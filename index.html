@@ -27,14 +27,18 @@
   <section id="section-browse">
     <header>
       <h2>Browse Movies</h2>
-      <!-- 
-      TODO 6
-      add a <form> here for users to search for movies by title 
-      -->
 
+      <form id="form-search">
+        <div class="input-group">
+          <input type="text" class="form-control" name="query"/>
+          <span class="input-group-btn">
+            <input type="submit" class="btn btn-primary" value="Search By Title"/>
+          </span>
+        </div>
+      </form>
     </header>
 
-    <ul></ul>
+    <ul class="list-group"></ul>
   </section>
 
   <script src="js/flicklist.js"></script>
@@ -43,16 +47,18 @@
     // TODO 8
     // fill in the missing pieces of the code below
 
-    $("TODO 8a").submit(function(evt) {
+    $("form-search").submit(function(evt) {
 
       // first, we cancel the default action (which would leave the page)
       evt.preventDefault();
 
       // figure out what the user typed
-      var searchTerm = $("TODO 8b").val();
+      var searchTerm = $("form-search").val();
 
       // TODO 8c invoke the searchMovies function,
       // passing in the search term, and render as the callback
+
+
 
     });
   </script>

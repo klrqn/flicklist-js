@@ -71,6 +71,7 @@ function render() {
       .append(title)
       // TODO 3
       // give itemView a class attribute of "item-watchlist"
+      .attr("class", "item-watchlist");
 
     $("#section-watchlist ul").append(itemView);
   });
